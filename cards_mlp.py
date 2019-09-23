@@ -1,3 +1,20 @@
+"""
+This is an example of a very simple Neural Network that achieves a 1-1 function
+between a set of numbers and a set of strings. This approach shows off how encoding
+and decoding can still maintain an accurate relationship between data. This
+specific example also highlights an issue that can happen with current libraries
+and setups for Neural Netowrks, which is having no protection against over-training.
+
+The set that the function is based on is the entire data set and does not have a domain
+beyond what is used in this program. That means that over time, the Neural Network will
+train such that there is no leniency and each input is exactly correlated with it's output.
+This may sound ideal, but for data sets that can expand, this will not work as well, because an over-trained
+Network won't accomodate correctly for data points that do not lie directly on the sample data set.
+
+TLDR: sample data shouldn't be exactly equal to entire data set, because then the NN thinks the
+sample data is the only possible data that could exist with the given correlation.
+"""
+
 # Imports
 
 from keras.layers import Dense
