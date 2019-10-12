@@ -12,11 +12,14 @@ import numpy as np
 import json_loader
 
 
-def normalize(data_set):
+def normalize(data_set, data_max=None, data_min=None):
     """Normalize values in array to range [0, 1]"""
 
-    data_min = min(data_set)
-    data_max = max(data_set)
+    if data_min is None:
+        data_min = min(data_set)
+
+    if data_max is None:
+        data_max = max(data_set)
 
     def norm_el(el):
 
@@ -41,7 +44,7 @@ def stars_given_latitude(num_epochs):
 
     model = create_simple_model(lats, stars, num_epochs, 1)
 
-    return model, max(_stars), min(_stars)
+    return model, max(stars), min(stars), max(lats), min(lats)
 
 
 def stars_given_length(num_epochs):
@@ -58,7 +61,7 @@ def stars_given_length(num_epochs):
 
     model = create_simple_model(lens, stars, num_epochs, 1)
 
-    return model, max(_stars), min(_stars)
+    return model, max(stars), min(stars), max(lens), min(lens)
 
 
 def create_simple_model(x, y, num_epochs, batch_size):
@@ -87,7 +90,7 @@ def create_simple_model(x, y, num_epochs, batch_size):
     # Model compilation. The optimizer, loss, and other
     # variables to this function can be tweaked or altered to get
     # a better model to relate the input and output
-    model.compile(optimizer=Adam(), loss='mean_squred_error', metrics=['accuracy'])
+    model.compile(optimizer=Adam(), loss='mean_squared_error', metrics=['accuracy'])
     
     # This is where the magic happens:
     model.fit(x=nx, y=ny, batch_size=1, epochs=num_epochs, validation_data=[nx, ny], verbose=0)
