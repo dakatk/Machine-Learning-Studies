@@ -22,8 +22,7 @@ def get_data(json_file, ids):
                 
     return values
 
-# All review data can be connected by 'user_id' and 'business_id'
-# to chain information from all files together
+# Pull data of interest from various json files:
 
 def get_restaurants_data():
     """Load data of interest from 'restaurants.json' file"""

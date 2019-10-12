@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 This is an example of a very simple Neural Network that achieves a 1-1 function
 between a set of numbers and a set of strings. This approach shows off how encoding
