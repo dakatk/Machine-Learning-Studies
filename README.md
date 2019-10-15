@@ -11,3 +11,8 @@ Goals:
 5. Assess performance of each set of NNs based on the same tests run for the Python code
 6. Compare, assess why differences in performance are the way they are (if drastic differences do exist)
 7. Report on pros/cons/utilities of when/why each language should be used
+
+Requirements:
+- tensorflow-gpu==2.0.0
+- keras==2.3.1
+- numpy==1.17.2
