@@ -15,27 +15,35 @@ def denormalize(norm, data_max, data_min):
 
 def correlation_1():
 
-    stars_loc_model, max_stars, min_stars, max_lats, min_lats = nns.stars_given_latitude(100)
+    stars_loc_model, max_stars, min_stars, max_lats, min_lats, max_longs, min_longs = nns.stars_given_latitude(20)
 
     prediction_lats = nns.normalize([37.8755, 37.87, 37.865], data_max=max_lats, data_min=min_lats)
 
     for loc in prediction_lats:
 
-        n_stars = denormalize(stars_loc_model.predict([loc]), mox_stars, min_stars)
-        print(f'For latitude {loc}, predicted number of stars is: {n_stars}')
+        stars = stars_loc_model.predict([loc])[0][0]
+
+        n_loc = denormalize(loc, max_lats, min_lats)
+        n_stars = denormalize(stars, max_stars, min_stars)
         
+        print(f'For latitude {n_loc}, predicted number of stars is: {n_stars}')
+
 
 def correlation_2():
+    
+    len_stars_model, max_lens, min_lens, max_stars, min_stars = nns.length_given_stars(100)
 
-    stars_len_model, max_stars, min_stars, max_lens, min_lens = nns.stars_given_length(100)
+    prediction_stars = nns.normalize([1, 2, 3, 4, 5], data_max=max_stars, data_min=min_stars)
 
-    prediction_lengths = nns.normalize([55, 250, 270, 75, 60, 190, 145, 230], data_max=max_lens, data_min=min_lens)
+    for stars in prediction_stars:
 
-    for length in prediction_lengths:
+        length = len_stars_model.predict([stars])[0][0]
 
-        n_stars = denormalize(stars_len_model.predict([length]), max_stars, min_stars)
-        print(f'For length {length} of a given review, predicted number of stars is: {n_stars}')
-
+        n_stars = denormalize(stars, max_stars, min_stars)
+        n_length = denormalize(length, max_lens, min_lens)
+        
+        print(f'For stars {n_stars} of a given review, predicted length is: {n_length}')
+        
 
 if __name__ == '__main__':
 
