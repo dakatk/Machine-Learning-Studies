@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b946574b-3ea6-45b3-b64c-2b89da34c244" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UG6GBYjWGi2xQfJDolh2q3X8aP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Neural Network from Scratch" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Neural Network from Scratch" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1379" height="378" key="GridCell.Tab.0.bottom" timestamp="1575644790613">
+      <screen x="0" y="23" width="1440" height="771" />
+    </state>
+    <state width="1419" height="378" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575575842131" />
+    <state width="1379" height="308" key="GridCell.Tab.0.bottom/0.23.1440.768@0.23.1440.768" timestamp="1575509695728" />
+    <state width="1379" height="378" key="GridCell.Tab.0.bottom/0.23.1440.771@0.23.1440.771" timestamp="1575644790613" />
+    <state width="1379" height="378" key="GridCell.Tab.0.center" timestamp="1575644790610">
+      <screen x="0" y="23" width="1440" height="771" />
+    </state>
+    <state width="1419" height="378" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575575842129" />
+    <state width="1379" height="308" key="GridCell.Tab.0.center/0.23.1440.768@0.23.1440.768" timestamp="1575509695727" />
+    <state width="1379" height="378" key="GridCell.Tab.0.center/0.23.1440.771@0.23.1440.771" timestamp="1575644790610" />
+    <state width="1379" height="378" key="GridCell.Tab.0.left" timestamp="1575644790609">
+      <screen x="0" y="23" width="1440" height="771" />
+    </state>
+    <state width="1419" height="378" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575575842128" />
+    <state width="1379" height="308" key="GridCell.Tab.0.left/0.23.1440.768@0.23.1440.768" timestamp="1575509695727" />
+    <state width="1379" height="378" key="GridCell.Tab.0.left/0.23.1440.771@0.23.1440.771" timestamp="1575644790609" />
+    <state width="1379" height="378" key="GridCell.Tab.0.right" timestamp="1575644790612">
+      <screen x="0" y="23" width="1440" height="771" />
+    </state>
+    <state width="1419" height="378" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575575842130" />
+    <state width="1379" height="308" key="GridCell.Tab.0.right/0.23.1440.768@0.23.1440.768" timestamp="1575509695727" />
+    <state width="1379" height="378" key="GridCell.Tab.0.right/0.23.1440.771@0.23.1440.771" timestamp="1575644790612" />
+  </component>
+</project>
